@@ -19,6 +19,7 @@ const displayPlayers = (players) => {
     playersContainer.appendChild(playerCard);
   });
 };
+console.log("hello");
 
 const fetchPlayers = async () => {
   try {
