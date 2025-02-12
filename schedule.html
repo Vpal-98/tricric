@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>live cricket scores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+      <div class="container-fluid px-lg-5">
+        <a class="logo" href="./index.html">
+          <img src="./images/logo/logocric.png" alt=" logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Current_matches.html"
+              >
+                Live Scores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="all_players.html">Player lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">IPL</a>
+            </li>
+          </ul>
+          <a href=""><i class="bi bi-person-circle custom-icon"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-success">
+      <div class="container">
+        <div class="matches">
+          <ul class="header1">
+            <li>
+              <a href="Current_matches.html" aria-label="View current matches"
+                >Current Matches</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="View current and future series"
+                >Current & Future Series</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="View matches by day">Matches By Day</a>
+            </li>
+
+            <li><a href="#" aria-label="View teams">Teams</a></li>
+            <hr />
+          </ul>
+
+          <h3>Cricket schedule</h3>
+          <div class="list-link">
+            <ul>
+              <li>
+                <a href="#" aria-label="View international matches"
+                  >International</a
+                >
+              </li>
+
+              <li>
+                <a href="#" aria-label="View domestic and other matches"
+                  >Domestic & Others</a
+                >
+              </li>
+
+              <li>
+                <a href="#" aria-label="View T20 leagues">T20 Leagues</a>
+              </li>
+
+              <li><a href="#" aria-label="View women's matches">Women</a></li>
+              <li>
+                <a href="#" aria-label="View all matches">All Matches</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="container">
+        <div class="layout"></div>
+        <!-- <div class="layout">
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                  <div class="col-lg-8">
+                    <div class="list">
+                      <div class="item">
+                        <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                        <span>Marsa Sports Club, Marsa</span>
+                      </div>
+                      <div class="item">
+                        <b>1:30 PM</b>
+                        <span>08:00 AM GMT / 10:00</span>
+                        <span>AM LOCAL</span>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="item">
+                        <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                        <span>Marsa Sports Club, Marsa</span>
+                      </div>
+                      <div class="item">
+                        <b>1:30 PM</b>
+                        <span>08:00 AM GMT / 10:00</span>
+                        <span>AM LOCAL</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="date">TUE, FEB 04 2025</div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6 class="custom-h">
+                    <a href="#">Malta T20I Tri-Series, 2025</a>
+                  </h6>
+                </div>
+                <div class="col-lg-8">
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="item">
+                      <a href="#"><b>Austria vs Hungary, 3rd Match</b></a>
+                      <span>Marsa Sports Club, Marsa</span>
+                    </div>
+                    <div class="item">
+                      <b>1:30 PM</b>
+                      <span>08:00 AM GMT / 10:00</span>
+                      <span>AM LOCAL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

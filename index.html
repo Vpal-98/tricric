@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>live cricket scores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+      <div class="container-fluid px-lg-5">
+        <a class="logo" href="./index.html">
+          <img src="./images/logo/logocric.png" alt=" logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Current_matches.html"
+              >
+                Live Scores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all_players.html">Player lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">IPL</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Archives</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Teams
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Videos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Rankings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul> -->
+            <!-- </li> -->
+            <!-- <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li> -->
+          </ul>
+          <a href=""><i class="bi bi-person-circle custom-icon"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cards Section -->
+    <section class="py-3 bg-success">
+      <div class="container">
+        <h1
+          style="
+            color: #fff;
+            font-weight: 200;
+            font-size: 30px;
+            text-align: center;
+          "
+        >
+          Live Scores
+        </h1>
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="score-card">
+              <div class="score-header">
+                <p>5th T20I • England tour of India, 2025</p>
+                <a href="#">T20i</a>
+              </div>
+              <div class="score-body">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c172115/india.jpg"
+                        alt="India"
+                      />
+                      <span>IND</span>
+                    </td>
+                    <td>
+                      <b class="bold">247-9 (20)</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c172123/england.jpg"
+                        alt="England"
+                      />
+                      <span class="eng">Eng</span>
+                    </td>
+                    <td>
+                      <b>97 (10.3)</b>
+                    </td>
+                  </tr>
+                </table>
+                <p>India won by 150 runs</p>
+              </div>
+              <div class="score-footer">
+                <span>fantasy handbook</span>
+                <span>schedule</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="score-card">
+              <div class="score-header">
+                <p>30th Match • SA20, 2025</p>
+                <a href="#">T20i</a>
+              </div>
+              <div class="score-body">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c248432/mi-cape-town.jpg"
+                        alt="MICT"
+                      />
+                      <span>MICT</span>
+                    </td>
+                    <td>
+                      <b class="bold">201-5 (20)</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c248443/pretoria-capitals.jpg"
+                        alt="PC"
+                      />
+                      <span class="eng">PC</span>
+                    </td>
+                    <td>
+                      <b>104 (14)</b>
+                    </td>
+                  </tr>
+                </table>
+                <p>MI Cape Town won by 95 runs</p>
+              </div>
+              <div class="score-footer">
+                <span>fantasy handbook</span>
+                <span>Table</span>
+                <span>schedule</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="score-card">
+              <div class="score-header">
+                <p>5th T20I • England tour of India, 2025</p>
+                <a href="#">T20i</a>
+              </div>
+              <div class="score-body">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c249194/dubai-capitals.jpg"
+                        alt="DCP"
+                      />
+                      <span>DCP</span>
+                    </td>
+                    <td>
+                      <b class="bold">217-4 (20)</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c249195/abu-dhabi-knight-riders.jpg"
+                        alt="ADKR"
+                      />
+                      <span class="eng">ADKR</span>
+                    </td>
+                    <td>
+                      <b>191-5 (20)</b>
+                    </td>
+                  </tr>
+                </table>
+                <p>Dubai Capitals won by 26 runs</p>
+              </div>
+              <div class="score-footer">
+                <span>fantasy handbook</span>
+                <span>Table</span>
+                <span>schedule</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="score-card">
+              <div class="score-header">
+                <p>30th Match • International League T20,2...</p>
+                <a href="#">T20i</a>
+              </div>
+              <div class="score-body">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c249199/desert-vipers.jpg"
+                        alt="India"
+                      />
+                      <span>Desert Vipers</span>
+                    </td>
+                    <td>
+                      <b class="bold"></b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://static.cricbuzz.com/a/img/v1/25x18/i1/c249194/dubai-capitals.jpg"
+                        alt="England"
+                      />
+                      <span class="eng">Dubai Capitals</span>
+                    </td>
+                    <td>
+                      <b></b>
+                    </td>
+                  </tr>
+                </table>
+                <p>Today 7:30pm</p>
+              </div>
+              <div class="score-footer">
+                <span>fantasy handbook</span>
+                <span>Table</span>
+                <span>Schedule</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="py-5 bg-success">
+      <div class="container">
+        <h1
+          style="
+            color: #fff;
+            font-weight: 200;
+            font-size: 30px;
+            text-align: center;
+          "
+        >
+          Schedule
+        </h1>
+      </div>
+    </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
