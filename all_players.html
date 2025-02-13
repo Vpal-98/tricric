@@ -25,15 +25,15 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
             <li class="nav-item">
               <a
@@ -60,129 +60,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">IPL</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Archives</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  News
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Series
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Teams
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Videos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Rankings
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul> -->
-            <!-- </li> -->
-            <!-- <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li> -->
           </ul>
           <a href=""><i class="bi bi-person-circle custom-icon"></i></a>
         </div>
@@ -193,156 +70,27 @@
 
     <section class="bg-success py-5">
       <div class="container">
-        <h3 class="m-0">Live Cricket Score</h3>
+        <h3 class="m-0">Player lists</h3>
       </div>
     </section>
 
-    <section class="schedule">
+    <section class="schedule py-5">
       <div class="container">
-        <div class="players"></div>
-        <!-- <div class="players">
-          <div class="player-card">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Hassnain Ali Shah"
-            />
-            <h3>Hassnain Ali Shah</h3>
-            <p>Country: Oman</p>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="profile-card">
+              <img
+                src="./images/dummy/dummy1.jfif"
+                alt="User Image"
+                class="profile-img"
+              />
+              <div class="profile-info">
+                <h3>Virat Kohli</h3>
+                <p>Country: India</p>
+              </div>
+            </div>
           </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Hashir Dafedar" />
-            <h3>Hashir Dafedar</h3>
-            <p>Country: Oman</p>
-          </div>
-          <div class="player-card">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Yash Vardhan Dalal"
-            />
-            <h3>Yash Vardhan Dalal</h3>
-            <p>Country: India</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Sivaraj Selvaraj" />
-            <h3>Sivaraj Selvaraj</h3>
-            <p>Country: Tanzania</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Asif Mohammad" />
-            <h3>Asif Mohammad</h3>
-            <p>Country: Bahrain</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Rishab Ramesh" />
-            <h3>Rishab Ramesh</h3>
-            <p>Country: Bahrain</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Hari Kukreja" />
-            <h3>Hari Kukreja</h3>
-            <p>Country: Singapore</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Morgan Topping" />
-            <h3>Morgan Topping</h3>
-            <p>Country: Ireland</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Vincent Masekesa" />
-            <h3>Vincent Masekesa</h3>
-            <p>Country: Zimbabwe</p>
-          </div>
-          <div class="player-card">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Qadargul Utmanzai"
-            />
-            <h3>Qadargul Utmanzai</h3>
-            <p>Country: Austria</p>
-          </div>
-          <div class="player-card">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Hekmatullah Khogiyani"
-            />
-            <h3>Hekmatullah Khogiyani</h3>
-            <p>Country: Austria</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Hamid Safi" />
-            <h3>Hamid Safi</h3>
-            <p>Country: Austria</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Janan Ghelzai" />
-            <h3>Janan Ghelzai</h3>
-            <p>Country: Austria</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Niyas Pullariyil" />
-            <h3>Niyas Pullariyil</h3>
-            <p>Country: Malta</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Sobu George" />
-            <h3>Sobu George</h3>
-            <p>Country: Malta</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Muhammad Usman" />
-            <h3>Muhammad Usman</h3>
-            <p>Country: Hungary</p>
-          </div>
-
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Alexander Wade" />
-            <h3>Alexander Wade</h3>
-            <p>Country: England</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Adhith Rajan" />
-            <h3>Adhith Rajan</h3>
-            <p>Country: Malta</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Pintu Ghosh" />
-            <h3>Pintu Ghosh</h3>
-            <p>Country: Malta</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Shrijay Patel" />
-            <h3>Shrijay Patel</h3>
-            <p>Country: Malta</p>
-          </div>
-          <div class="player-card">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Matthew Ainsworth"
-            />
-            <h3>Matthew Ainsworth</h3>
-            <p>Country: Hungary</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Ximus du Plooy" />
-            <h3>Ximus du Plooy</h3>
-            <p>Country: Hungary</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Chris Dowle" />
-            <h3>Chris Dowle</h3>
-            <p>Country: Hungary</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Rewati Dhami" />
-            <h3>Rewati Dhami</h3>
-            <p>Country: Nepal</p>
-          </div>
-          <div class="player-card">
-            <img src="https://via.placeholder.com/100" alt="Rahmat Ali" />
-            <h3>Rahmat Ali</h3>
-            <p>Country: Bangladesh</p>
-          </div>
-        </div> -->
+        </div>
       </div>
     </section>
 

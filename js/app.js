@@ -1,30 +1,12 @@
-const apiSys = "f8a60488-cc45-4bbf-ba21-c3efff3b2c69";
-const playersContainer = document.querySelector(".schedule .players");
-
-const displayPlayers = (players) => {
-  playersContainer.innerHTML = ""; // Clear previous data
-
-  players.forEach((player) => {
-    const playerCard = document.createElement("div");
-    playerCard.classList.add("player-card");
-
-    playerCard.innerHTML = `
-                        <img src="${
-                          player.image || "https://via.placeholder.com/100"
-                        }" alt="${player.name}">
-                        <h3>${player.name}</h3>
-                        <p>Country: ${player.country || "Unknown"}</p>
-                    `;
-
-    playersContainer.appendChild(playerCard);
-  });
-};
-console.log("hello");
+const apiKey = "f8a60488-cc45-4bbf-ba21-c3efff3b2c69"; // Replace if needed
+const playersContainer = document.querySelector(".schedule .row");
 
 const fetchPlayers = async () => {
   try {
+    console.log("Fetching players...");
+
     const response = await fetch(
-      `https://api.cricapi.com/v1/players?apikey=${apiSys}&offset=0`
+      `https://api.cricapi.com/v1/players?apikey=${apiKey}&offset=0`
     );
 
     if (!response.ok) {
@@ -32,9 +14,46 @@ const fetchPlayers = async () => {
     }
 
     const data = await response.json();
-    console.log(data);
+    console.log("API Response:", data.data);
+    const displayPlayers = (players) => {
+      playersContainer.innerHTML = ""; // Clear previous data
 
-    // Check if data exists
+      if (players.length === 0) {
+        playersContainer.innerHTML = "<p>No players found.</p>";
+        return;
+      }
+
+      players.forEach((player) => {
+        const colDiv = document.createElement("div");
+        colDiv.classList.add("col-lg-3");
+
+        const playerCard = document.createElement("div");
+        playerCard.classList.add("profile-card");
+
+        const playerImg = document.createElement("img");
+        playerImg.src = "./images/dummy/dummy1.jfif";
+        playerImg.alt = player.name;
+        playerImg.classList.add("profile-img");
+
+        const profileInfo = document.createElement("div");
+        profileInfo.classList.add("profile-info");
+
+        const playerName = document.createElement("h3");
+        playerName.textContent = player.name;
+
+        const playerCountry = document.createElement("p");
+        playerCountry.textContent = `Country: ${player.country || "Unknown"}`;
+
+        // Append elements properly
+        profileInfo.appendChild(playerName);
+        profileInfo.appendChild(playerCountry);
+        playerCard.appendChild(playerImg);
+        playerCard.appendChild(profileInfo);
+        colDiv.appendChild(playerCard);
+        playersContainer.appendChild(colDiv);
+      });
+    };
+
     if (data && data.data) {
       displayPlayers(data.data);
     } else {
@@ -46,4 +65,5 @@ const fetchPlayers = async () => {
   }
 };
 
+// Fetch and display players
 fetchPlayers();
