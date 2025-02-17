@@ -172,7 +172,7 @@ h3 {
 
 /* Layout styling */
 .layout {
-  background-color: #f8f9fa; /* Light gray background */
+  /* background-color: #f8f9fa; Light gray background */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -241,21 +241,32 @@ h3 {
   margin-left: 11px;
   flex-wrap: wrap;
 }
-
+.date h5 a {
+  color: #333;
+  text-decoration: none;
+}
 .vs {
   margin-left: 32px;
 }
 .vs1 {
   display: flex;
+  background-color: #ecebeb;
+}
+
+.vs1 h5 a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
 }
 .vs h5 a {
   text-decoration: none;
   color: #333;
+  list-style: none;
 }
 .live-scores {
   background-color: #ecebeb;
   padding: 10px;
-  max-width: 300px;
+  max-width: 350px;
   margin-left: 30px;
 }
 

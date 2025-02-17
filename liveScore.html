@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>live cricket scores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+      <div class="container-fluid px-lg-5">
+        <a class="logo" href="./index.html">
+          <img src="./images/logo/logocric.png" alt=" logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="liveScore.html"
+              >
+                Live Scores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="all_players.html">Player lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">IPL</a>
+            </li>
+          </ul>
+          <a href=""><i class="bi bi-person-circle custom-icon"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-success py-5">
+      <div class="container">
+        <div class="matches">
+          <!-- <hr /> -->
+          <h3>Live Cricket Score</h3>
+          <!--      
+          <hr />
+         
+        <hr />  -->
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="container">
+        <div class="layout">
+          <ul class="p-0">
+            <li>
+              <p class="date">ENGLAND TOUR OF INDIA, 2025</p>
+
+              <div class="vs">
+                <div class="vs1">
+                  <h5>
+                    <a href="#"><b>England v/s India</b></a>
+                  </h5>
+                  <span><small>, 1st ODI</small></span>
+                </div>
+                <p>
+                  <small>
+                    Today • 1:30 PM at Nagpur, Vidarbha Cricket Association
+                    Stadium
+                  </small>
+                </p>
+              </div>
+              <div class="live-scores">
+                <a href="#">
+                  <table>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://g.cricapi.com/iapi/57-637877076980737903.webp?w=48"
+                          alt="NZ"
+                          id="country-img"
+                        />
+                        NZ
+                      </td>
+                      <td>170-5 (33 Ovs)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="https://g.cricapi.com/iapi/66-637877075103236690.webp?w=48"
+                          alt="PAk"
+                          id="country-img"
+                        />
+                        <!-- IND -->
+                        PAk
+                      </td>
+                    </tr>
+                  </table>
+                  <p>England opt to bat</p>
+                </a>
+              </div>
+              <div class="list-style-link">
+                <ul>
+                  <li><a href="#">Live Score</a></li>
+                  |
+                  <li><a href="#">Scorecard</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
