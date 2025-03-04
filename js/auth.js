@@ -111,4 +111,4 @@ function displayMatches(matches) {
   });
 }
 
-// fetchMatches();
+fetchMatches();

@@ -87,20 +87,6 @@ const fetchSchedule = async () => {
     console.error("डेटा फ़ेच करने में त्रुटि:", error);
   }
 };
-// fetchSchedule();
+fetchSchedule();
 
 // players lists
-
-// const fetchPlayer = async () => {
-//   try {
-//     // try is the block of handle the potential errors when making a api request.
-//     const request = await fetch(
-//       //fetch is the make a http request to given url.
-//       `https://api.cricapi.com/v1/players?apikey=${apikey}&offset=0`
-//     ); //response.json() converts JSON response to a JavaScript object.
-//     //await response.json() ensures JavaScript waits for conversion to complete.
-
-//     const data = await request.json(); //const data = await response.json();
-//     console.log(data);
-//   }
-// }

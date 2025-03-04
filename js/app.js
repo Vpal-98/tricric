@@ -68,4 +68,4 @@ const fetchPlayers = async () => {
 };
 
 // Fetch and display players
-// fetchPlayers();
+fetchPlayers();
