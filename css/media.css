@@ -1,0 +1,22 @@
+/* schedule page contents */
+@media (max-width: 767px) {
+  .layout ul,
+  .list-link ul,
+  .matches .profile-card h3 {
+    padding: 0px;
+  }
+  .header1 {
+    display: block;
+  }
+  .header1 li {
+    margin: 0;
+    display: block;
+  }
+  .profile-card {
+    width: 100%;
+  }
+
+  /* .live-scores {
+    margin-left: 0;
+  }  */
+}

@@ -1,4 +1,4 @@
-const apiKey = "f8a60488-cc45-4bbf-ba21-c3efff3b2c69"; // 👈 Apna API key yahan daalein
+const apiKey = "f8a60488-cc45-4bbf-ba21-c3efff3b2c69";
 const liveMatches = document.querySelector(".schedule .container .layout");
 
 async function fetchMatches() {
@@ -12,7 +12,7 @@ async function fetchMatches() {
     }
 
     const data = await response.json();
-    console.log("API Response:", data); // 👈 Console me response check karein
+    console.log("API Response:", data); //
 
     if (!data || !data.data || data.data.length === 0) {
       document.getElementById("matchContainer").innerHTML =
@@ -29,7 +29,7 @@ async function fetchMatches() {
 }
 
 function displayMatches(matches) {
-  liveMatches.innerHTML = ""; // Purana content hatao
+  liveMatches.innerHTML = ""; //
 
   matches.forEach((match) => {
     if (!match.teamInfo || match.teamInfo.length < 2) return;
@@ -111,5 +111,4 @@ function displayMatches(matches) {
   });
 }
 
-// Page load par API call karein
-fetchMatches();
+// fetchMatches();

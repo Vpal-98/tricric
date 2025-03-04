@@ -87,7 +87,7 @@ const fetchSchedule = async () => {
     console.error("डेटा फ़ेच करने में त्रुटि:", error);
   }
 };
-fetchSchedule();
+// fetchSchedule();
 
 // players lists
 
